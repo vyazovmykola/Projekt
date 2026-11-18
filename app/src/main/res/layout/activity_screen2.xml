@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F9FA"
+    tools:context=".Screen2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Tottenham Hotspur Season Budget"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#132257" />
+
+        <!-- Revenue Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Revenue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#132257"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginBottom="20dp">
+
+            <TableRow android:padding="4dp">
+                <TextView android:text="Broadcasting" />
+                <TextView android:id="@+id/tvTvRights" android:text="£225.0M" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp">
+                <TextView android:text="Sponsorships" />
+                <TextView android:id="@+id/tvSponsorship" android:text="£207.0M" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp">
+                <TextView android:text="Matchday" />
+                <TextView android:id="@+id/tvMatchday" android:text="£117.0M" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp">
+                <TextView android:text="Special Events Revenue" />
+                <TextView android:id="@+id/tvEventsRevenue" android:text="£0.0M" android:textColor="#132257" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp" android:background="#EAEFF5">
+                <TextView android:text="TOTAL REVENUE" android:textStyle="bold" android:textColor="#132257" />
+                <TextView android:id="@+id/tvTotalRevenue" android:text="£0.0M" android:textStyle="bold" android:textColor="#132257" android:gravity="end" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Expenses Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Expenses"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#132257"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginBottom="24dp">
+
+            <TableRow android:padding="4dp">
+                <TextView android:text="Squad Salaries" />
+                <TextView android:id="@+id/tvSalaries" android:text="£0.0M" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp">
+                <TextView android:text="Transfer Amortization" />
+                <TextView android:id="@+id/tvTransfers" android:text="£110.0M" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp">
+                <TextView android:text="Stadium Operations" />
+                <TextView android:id="@+id/tvStadium" android:text="£75.0M" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp">
+                <TextView android:text="Operating Costs" />
+                <TextView android:id="@+id/tvOperations" android:text="£65.0M" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp">
+                <TextView android:text="Special Events Expenses" />
+                <TextView android:id="@+id/tvEventsExpenses" android:text="£0.0M" android:textColor="#132257" android:gravity="end" />
+            </TableRow>
+            <TableRow android:padding="4dp" android:background="#EAEFF5">
+                <TextView android:text="TOTAL EXPENSES" android:textStyle="bold" android:textColor="#132257" />
+                <TextView android:id="@+id/tvTotalExpenses" android:text="£0.0M" android:textStyle="bold" android:textColor="#132257" android:gravity="end" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Balance Section -->
+        <LinearLayout
+            android:id="@+id/layoutBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#132257">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NET FINANCIAL BALANCE"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvNetBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="£0.0M"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

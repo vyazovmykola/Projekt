@@ -1,19 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F8F9FA"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Tottenham Hotspur FC"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#132257"
+        android:layout_marginBottom="32dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnScreen1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Players &amp; Wages"
+        android:backgroundTint="#132257"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnScreen2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Season Budget &amp; Financial Balance"
+        android:backgroundTint="#132257"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnScreen3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Club Events"
+        android:backgroundTint="#132257"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnScreen4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Player Salaries"
+        android:backgroundTint="#132257"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
